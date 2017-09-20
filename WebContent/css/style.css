@@ -3,7 +3,7 @@ body{
 	background-image:url('http://static.tumblr.com/z9nrs6q/PCZm618wv/untitled-2.png');
 	background-position: fixed;
 	background-attachment:fixed;
-	background-repeat:repeat;
+	background-repeat: repeat;
 	color: #dedbc3;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 15px;
@@ -13,13 +13,19 @@ body{
 
 #content{
 	width: 1200px;
-	margin: 0 auto;
-	overflow: auto;
+	margin: 0px auto 10px auto;
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .content a{
 	color: #8b942a;
+}
+
+.content iframe{
+	width: 100%;
+	height: 800px;
 }
 
 #sidebar{
@@ -32,18 +38,24 @@ body{
 	flex-grow: 1;
 }
 
+#sidebar img{
+	width: 100%;
+	height: 100%;
+}
+
 #mainContent{
-	display: inline-block;
+	padding: 5px;
 	border: 1px solid #dedbc3;
 	background-color: white;
 	color: #71787c;
-	padding: 5px;
 	flex: 1;
-	flex-grow: 3
+	flex-grow: 3;
 }
 
 #bar1{
 	border: 1px solid #dedbc3;
+	position: relative;
+	height: 380px;
 	background-color: white;
 	color: #71787c;
 	padding: 5px;
@@ -54,36 +66,45 @@ body{
 
 #bar2{
 	display: inline-block;
+	position: relative;
 	border: 1px solid #dedbc3;
 	background-color: white;
 	color: #71787c;
 	padding: 5px;
 	margin-right: 10px;
 	flex: 1;
-	flex-grow: 1
+	flex-grow: 1;
 }
 
 #bar3{
 	display: inline-block;
 	border: 1px solid #dedbc3;
+	position: relative;
 	background-color: white;
 	color: #71787c;
 	padding: 5px;
 	flex: 1;
-	flex-grow: 1
+	flex-grow: 1;
+}
+
+#bar1 p{
+	position: absolute;
+	bottom: 1px;
+}
+
+#bar2 p{
+	position: absolute;
+	bottom: 1px;
 }
 
 #footer{
-	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
 	text-align: center;
 	font-size: 12px;
-	width: 1200px;
-	display:block;
-	border: 1px solid #dedbc3;
-	background-color: white;
+	padding-top: 1px;
+	padding-bottom: 3px;
 	color: #71787c;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .logo{
